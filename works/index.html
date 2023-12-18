@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!--a-blog用記述--> 
+<script src="../oda/%{JS_LIB_JQUERY_DIR}jquery-1.11.1.min.js" charset="UTF-8"></script> 
+<!-- BEGIN_MODULE Js --> 
+<script type="text/javascript" src="/acms.js{arguments}" id="acms-js"　charset="UTF-8"></script> 
+<!-- END_MODULE Js -->
+<link href="/css/acms-admin.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="/css/acms.css" rel="stylesheet" type="text/css" media="all">
+<!--//a-blog用記述--> 
+
+<!--スタイルシート-->
+@include('/_common/include/stylesheet.html')
+<link rel="stylesheet" href="/_common/css/top.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<!--//スタイルシート--> 
+
+<!--JavaScript-->
+@include('/_common/include/js.html')
+<!--//JacaScript-->
+
+<title>Portfolio｜Works</title>
+</head><body>
+<!--#include file="/_common/include/tagmanager.html"--> 
+
+<!-- 共通ヘッダー --> 
+@include('/_common/include/header.html') 
+<!-- //共通ヘッダー -->
+
+<div class="main">
+  
+  
+  <!-- トピックス -->
+  <section id="menu"> 
+    
+    <!-- Works-->
+    <div id="work" class="container">
+      <div class="range100 d-xs-none"></div>
+      <div class="range30 d-xs-none"></div>
+      <div class="range70 d-xs-block"></div>
+      <h2 class="title">Works</h2>
+    <div class="work">
+    <img src="/img/img_01.jpg" alt="" width="100%">
+    <img src="/img/img_02.jpg" alt="" width="100%">
+    <img src="/img/img_03.jpg" alt="" width="100%">
+    <img src="/img/img_04.jpg" alt="" width="100%">
+    <img src="/img/img_05.jpg" alt="" width="100%">
+    <img src="/img/img_06.jpg" alt="" width="100%">
+    </div>
+    </div>
+    <!-- //Works--> 
+    
+  </section>
+  <!-- //トピックス --> 
+</div>
+
+<!--フッター--> 
+@include('/_common/include/footer.html') 
+<!--//フッター--> 
+</body>
+</html>
