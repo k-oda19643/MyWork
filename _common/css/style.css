@@ -1,11 +1,16 @@
 @charset "UTF-8";
-html, body {
+
+/*================================================================
+共通
+================================================================*/  html, body {
   font-size: 14px;
   font-family: sans-serif;
   /*font-family: source-han-sans-japanese, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;*/
   color: #000;
   margin: 0;
 }
+
+/*表示・非表示*/
 @media screen and (max-width: 767px) {
   .d-xs-none {
     display: none !important;
@@ -22,6 +27,8 @@ html, body {
     display: block !important;
   }
 }
+
+/*余白*/
 .range10 {
   display: block;
   width: 100%;
@@ -72,31 +79,62 @@ html, body {
   width: 100%;
   height: 100px;
 }
-/* container
----------------------------------------------------------- */
-.container {
-  padding: 0;
-}
-@media screen and (max-width: 991px) {
-  .container {
-    padding: 0 15px;
-  }
-}
+
+/* container TOP */
 @media all and (min-width: 769px) {
-  .container {
+#top .container {
     max-width: 840px;
+    /*max-width: 960px;*/
     margin: 0 auto;
   }
 }
 @media all and (min-width: 769px) {
-  .container--large {
+#top .container--large {
     max-width: 1180px;
   }
 }
+
+/* container その他 */
+.container {
+  padding: 0;
+}
+@media screen and (max-width: 991px) {
+.container {
+    padding: 0 15px;
+  }
+}
+@media all and (min-width: 769px) {
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 769px) {
+.container--large {
+    max-width: 1180px;
+  }
+}
+
+
 section {
   display: block;
   position: relative;
 }
+
+/*メニュータイトル*/
+@media screen and (max-width: 991px) {}
+#menu h2.title {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  margin: 0 0 65px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #menu h2.title {
+    margin: 0 0 40px;
+  }
+}
+
 /*================================================================
 ヘッダー
 ================================================================*/

@@ -6,18 +6,7 @@
   width: 100%;
   margin: 0;
 }
-@media screen and (max-width: 991px) {}
-#menu .title {
-  font-size: 1.5rem;
-  letter-spacing: 0;
-  margin: 0 0 65px;
-  text-align: center;
-}
-@media screen and (max-width: 767px) {
-  #menu .title {
-    margin: 0 0 40px;
-  }
-}
+
 /* work */
 #work .work {
   display: grid;
