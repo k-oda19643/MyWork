@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!--a-blog用記述--> 
+<script src="../oda/%{JS_LIB_JQUERY_DIR}jquery-1.11.1.min.js" charset="UTF-8"></script> 
+<!-- BEGIN_MODULE Js --> 
+<script type="text/javascript" src="/acms.js{arguments}" id="acms-js"　charset="UTF-8"></script> 
+<!-- END_MODULE Js -->
+<link href="/css/acms-admin.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="/css/acms.css" rel="stylesheet" type="text/css" media="all">
+<!--//a-blog用記述--> 
+
+<!--スタイルシート-->
+@include('/_common/include/stylesheet.html')
+<link rel="stylesheet" href="/_common/css/top.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<!--//スタイルシート--> 
+
+<!--JavaScript-->
+@include('/_common/include/js.html')
+<!--//JacaScript-->
+
+<title>Portfolio｜Contact</title>
+</head><body>
+<!--#include file="/_common/include/tagmanager.html"--> 
+
+<!-- 共通ヘッダー --> 
+@include('/_common/include/header.html') 
+<!-- //共通ヘッダー -->
+
+<div class="main">
+  
+  
+  <!-- トピックス -->
+  <section id="menu"> 
+      
+    <!-- Contact-->
+    <div id="contact" class="container">
+      <div class="range100 d-xs-none"></div>
+      <div class="range30 d-xs-none"></div>
+      <div class="range70 d-xs-block"></div>
+      <h2 class="title">Contact</h2>
+      <div class="contact">
+          <div class="data">NAME</div>
+          <input type="text" name="name01" value="" class="input-text" required="">
+        </div>
+      <div class="contact">
+          <div class="data">E-mail</div>
+          <input type="text" name="E-mail" value="" class="input-text" required="">
+        </div>
+      <div class="contact">
+          <div class="data">MESSAGE</div>
+          <input type="text" name="MESSAGE" value="" class="input-text" required="">
+        </div>
+      <input type="submit" name="ACMS_POST_Form_Confirm" value="送信" class="submit">
+    </div>
+    <!-- //Contact--> 
+    
+  </section>
+  <!-- //トピックス --> 
+</div>
+
+<!--フッター--> 
+@include('/_common/include/footer.html') 
+<!--//フッター--> 
+
+<!--JavaScript--> 
+@include('/_common/include/footer_js.html') 
+<!--//JacaScript-->
+
+</body>
+</html>
